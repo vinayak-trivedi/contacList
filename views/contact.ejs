@@ -14,12 +14,13 @@
     </form>
     <div id="contact-info">
         <div>
-            <div id="myname">vinayak</div>
-            <div id="myno">49478437543857</div>
+            <div class="myname">vinayak</div>
+            <div class="myno">49478437543857</div>
         </div>
-        <% for(let i of contact-list) { %> 
-            <div id="myname"> <%= i.name %>
+        <% for(let i of contactDB) { %> 
+            <div class="myname"> <%= i.name %>
             </div>
+            <div class="myno"><%= i.contact %></div>
        <% }%>
     </div>
 </body>

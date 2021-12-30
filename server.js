@@ -21,7 +21,7 @@ app.get('/',function(req,res) {
 })
 app.get('/contact',function(req,res) {
     return res.render('contact', {
-        "contact-list" : contactList
+        "contactDB" : contactList
     })
 })
 app.post('/create-contact',function(req,res) {
